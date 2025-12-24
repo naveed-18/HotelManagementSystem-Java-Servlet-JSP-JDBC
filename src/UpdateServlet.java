@@ -18,6 +18,6 @@ public class UpdateServlet extends HttpServlet {
 
         request.setAttribute("message", success ? "Updated Successful!" : "Updation Failed");
 
-//        request.getRequestDispatcher("/WEB-INF/views/updateJsp.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/updateJsp.jsp").forward(request, response);
     }
 }

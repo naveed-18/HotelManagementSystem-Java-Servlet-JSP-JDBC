@@ -19,6 +19,6 @@ public class ReserveServlet extends HttpServlet {
 
         request.setAttribute("message", success? "Reservation Successful" : "Reservation Failed");
 
-//        request.getRequestDispatcher("WEB-INF/views/reserveJsp.jsp").forward(request, response);
+        request.getRequestDispatcher("WEB-INF/views/reserveJsp.jsp").forward(request, response);
     }
 }

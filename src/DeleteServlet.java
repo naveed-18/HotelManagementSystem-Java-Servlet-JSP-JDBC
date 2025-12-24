@@ -16,6 +16,6 @@ public class DeleteServlet extends HttpServlet {
 
         request.setAttribute("message", success ? "Deleted Successful!" : "Deletion Failed!");
 
-//        request.getRequestDispatcher("/WEB-INF/views/deleteJsp.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/deleteJsp.jsp").forward(request, response);
     }
 }

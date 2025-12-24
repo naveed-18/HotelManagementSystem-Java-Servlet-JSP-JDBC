@@ -17,6 +17,6 @@ public class GetRoomNumberServlet extends HttpServlet {
 
         request.setAttribute("roomNumber", roomNumber);
 
-//        request.getRequestDispatcher("WEB-INF/views/getRoomNumberJsp.jsp").forward(request, response);
+        request.getRequestDispatcher("WEB-INF/views/getRoomNumberJsp.jsp").forward(request, response);
     }
 }

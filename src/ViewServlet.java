@@ -15,7 +15,7 @@ public class ViewServlet extends HttpServlet {
         try {
             ArrayList<Reservation> reservations = dao.viewReservations();
             request.setAttribute("reservations", reservations);
-//            request.getRequestDispatcher("WEB-INF/views/viewJsp.jsp").forward(request, response);
+            request.getRequestDispatcher("WEB-INF/views/viewJsp.jsp").forward(request, response);
         } catch (ServletException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
